@@ -1,0 +1,72 @@
+.banner{
+    padding-top: 230px !important; 
+    padding-bottom: 70px !important; 
+    background-size: auto !important;
+    
+    border-radius: 0 !important;
+
+    @media (max-width: $laptop-max){
+        min-height: auto !important;
+        padding-top: 170px !important;
+        padding-bottom: 60px !important;
+    }
+
+    @media (max-width: $md-max){
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        text-align: center;
+    } 
+}
+
+.page{
+    .banner{ 
+        min-height: calc(100vh - 30px) !important;
+    }
+}
+
+.single{
+    .banner{
+        min-height: calc(60vh - 30px) !important;
+    }
+}
+
+.home{
+    .banner{
+
+     @media (min-width: $ss-max) and (max-width: 480px) {
+            background-image: linear-gradient(150deg, var(--awb-color2) 0%,var(--awb-color5) 73%),url(../images/hero-img-above-fold-mobile.png) !important;
+        }
+
+        h1{
+            @media (min-width: $ss-max) and (max-width: 480px) {
+                 font-size: 60px !important;
+             }
+           
+        }
+       
+        @media (min-width: $ss-max) and (max-width: 480px) {
+            height: 90vh !important;
+        }
+        .inline-button .fusion-column-wrapper{
+
+            @media (min-width: $ss-max) and (max-width: 480px) {
+                justify-content: center;
+            }
+
+            div:nth-child(2){
+                @media (min-width: $ss-max) and (max-width: 480px) {
+                     margin: 10px 0 0 -98px;
+                }
+
+
+            }
+           
+        }
+    }
+    .aws-migration{
+        @media (min-width: $ss-max) and (max-width: 480px) {
+             background-size: 159% 62% !important;
+             background-position-y: 130%;
+        }
+    }
+}

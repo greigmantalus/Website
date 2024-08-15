@@ -1,0 +1,32 @@
+#mobile-header{
+
+    a{
+        text-transform: uppercase !important;
+    }
+    #menu-main-menu-1{
+        @media (min-width: $ss-max) and (max-width: 480px) {
+            border-radius: 30px !important;
+            padding: 80px 20px;
+            z-index: 2;
+            min-height: 97vh;
+        }
+
+        .expanded .awb-menu__open-nav-submenu_mobile:before{
+            content: "\2212" !important;
+        }
+    }
+   .awb-menu__m-toggle{
+        position: absolute;
+        z-index: 999;
+   }
+   .awb-menu.expanded .awb-menu__m-toggle{
+       background: $charlie-color;
+
+       .awb-menu__m-collapse-icon{
+           color: #fff !important;
+       }
+   }
+   .awb-menu__open-nav-submenu_mobile:before{
+        content: "\002B" !important;
+   }
+}

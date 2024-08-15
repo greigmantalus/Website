@@ -1,0 +1,30 @@
+.fusion-testimonials{
+	&.clean{
+		blockquote q, .author{
+			font-style: initial;
+			font-size: inherit !important;
+			line-height: inherit !important;
+			text-align: left !important;
+			margin-top: 0 !important;
+		}
+
+		.testimonial-pagination{
+			text-align: left;
+
+			a{
+				height: 8px;
+			    width: 80px;
+			    border-radius: 5px !important;
+			    background: $medium-gray;
+			    border: none !important;
+
+			    &.activeSlide{
+			    	background: $delta-color !important;
+			    }
+			}
+		}
+		.author{
+			text-transform: uppercase;
+		}
+	}
+}

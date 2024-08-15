@@ -1,0 +1,26 @@
+.fusion-gallery{
+	text-align: center;
+
+	.fusion-gallery-column{
+		text-align: center;
+	    position: relative !important;
+	    left: initial !important;
+	    top: initial !important;
+	    display: inline-block !important;
+
+	    .clearfix{
+	    	display: none !important;
+	    }
+	}
+	
+	img{
+		max-height: 80px !important;
+	    object-fit: contain !important;
+	    width: auto !important;
+	}
+	a:hover{
+		img{
+			filter: grayscale(0%);
+		}
+	}
+}

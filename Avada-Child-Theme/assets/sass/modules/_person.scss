@@ -1,0 +1,82 @@
+.person{
+	position: relative;
+
+	.awb-icon-linkedin{
+		position: absolute;
+		top: calc(100% - 150px);
+		left: 15px;
+		border: 1px solid #FFFFFF !important;
+		z-index: 999;
+
+		&:hover{
+			border-color: $delta-color !important;
+		}
+
+		@media (max-width: $md-max){
+			top: 20px !important;
+			left: 20px;
+		}
+	}	
+
+	.person-name{
+		font-size: 30px !important;
+		display: inline-block;
+		margin-bottom: 10px;;
+	}
+	.person-title{
+		font-size: 16px !important;
+		letter-spacing: 1px;
+	}
+
+	@media (min-width: $md-min){
+		.person-content{
+			display: none;
+			background: $alpha-color;
+		    color: #FFFFFF;
+		    position: absolute;
+		    top: -25px;
+		    width: 100%;
+		    padding: 30px;
+		    height: calc(100% - 90px);
+		    @include border-radius(30px);
+		}
+	}
+}
+
+@media (min-width: $md-min)
+{
+	.team{
+		.bio{
+			cursor: pointer;
+			position: absolute;
+			top: calc(100% - 150px);
+			right: 40px;
+		}
+		&:not(.opened){
+			.bio:before{
+				content: "\ea3b" !important;
+				display: inline-block;
+				position: relative;
+				top: 1px;
+				font-family: $icomoon;
+			}
+		}
+
+		&.opened{
+			.person-content{
+				display: flex;
+				align-items: center;
+			}
+
+			.bio:before{
+				content: "\f00d";
+				display: inline-block;
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+}
+.awb-gallery-wrapper img{
+	filter: grayscale(0%) !important;
+}

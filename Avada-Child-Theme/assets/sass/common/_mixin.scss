@@ -1,0 +1,26 @@
+@mixin transition($val){
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -ms-transition: $val;
+    -o-transition: $val; 
+    transition: $val;
+}
+@mixin font-awesome-brands{font-family: 'Font Awesome 5 Brands' !important;}
+@mixin box-shadow{
+    -webkit-box-shadow: 12px 12px 8px -6px $medium-gray;
+    -moz-box-shadow: 12px 12px 8px -6px $medium-gray;
+    box-shadow: 12px 12px 8px -6px $medium-gray;
+} 
+@mixin border-radius-top($val){
+    -webkit-border-top-left-radius: $val !important;
+    -webkit-border-top-right-radius: $val !important;
+    -moz-border-radius-topleft: $val !important;
+    -moz-border-radius-topright: $val !important;
+    border-top-left-radius: $val !important;
+    border-top-right-radius: $val !important;
+}
+@mixin border-radius($val){
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    border-radius: $val;
+}

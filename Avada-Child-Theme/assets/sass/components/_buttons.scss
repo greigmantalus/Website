@@ -1,0 +1,181 @@
+.fusion-button{
+    line-height: 1 !important;
+    font-size: $button-font-size !important;
+    position: relative;
+
+    i{
+        display: inline-block;
+        background: $delta-color;
+        border-radius: 50%;
+        line-height: 1;
+        padding: 9px 9px;
+        margin-left:25px !important;
+
+        @media (min-width: $ss-max) and (max-width: $xs-max) {
+            margin-left:.7em !important;
+        }
+        @media (min-width: $ss-max) and (max-width: 480px) {
+            margin-left:10px !important;
+        }
+        @media only screen and (min-width: 375px){
+            margin-left:.4em !important;
+        }
+
+        &:before{
+            color: #FFFFFF;
+        }
+
+        &:hover{
+            
+        }
+    }
+
+    &.transparent-arrow i{
+        background: transparent !important;
+    }
+
+    &:hover{
+        background: #FFFFFF;
+
+        &:before{
+            color: $body-color;
+        }
+    }
+
+    &.button-small{
+         padding: 5px 5px 5px 10px !important;
+         font-size: 12px !important;
+
+         i{
+            background: $delta-color;
+            padding: 5px 6px;
+        }
+    }
+    &.button-medium{
+         padding: 8px 10px 8px 40px;
+
+         &:hover i{
+            background: $alpha-color;
+        }
+    }
+    &.button-large{
+        // padding: 0 25px 0 64px !important;
+        padding: 0 34px 0 47px !important;
+
+        &:hover{
+            background: $delta-color;
+
+            i{
+                background: #FFFFFF;
+                color: $delta-color !important;
+
+                &:before{
+                    color: $delta-color;
+                }
+            }
+        }
+
+        i{
+            padding: 19px 20px;
+            margin-right: -93px;
+            font-size: 20px;        
+        }
+        .fusion-button-text{
+            position: relative;
+            left: -20px;
+        }
+    }
+    &.inverted{
+        padding: 0 30px 0 30px !important;
+
+
+        &:hover{
+            background: none;
+
+            .fusion-button-text{
+                color: $delta-color !important;
+                     
+            }
+        }
+
+        i{
+            padding: 19px;
+            margin-right: -70px;
+            background: none !important;
+            border: 1px solid $delta-color;
+            font-size: 20px;
+            margin-left: 18px !important;
+
+            &:before{
+                color: $delta-color;
+            }
+        }
+        .fusion-button-text{
+            position: relative;
+            left: 0;
+            word-spacing: 3px; 
+        }
+    }
+}
+.inline-button{
+    .fusion-column-wrapper > div{
+        display: inline-block;
+    }
+}
+
+#mobile-header{
+    .awb-menu__m-toggle{
+        width: 7px !important;
+        height: 23px;
+        border-radius: 50%;
+
+        .awb-menu__m-collapse-icon{
+            left: -4px;;
+        }
+    }
+}
+.btn-mr-1 i{
+           margin-right: -93px !important; 
+}
+.btn-banner {
+   padding-left:25px !important;
+   i{
+    padding: 19px 19px !important;
+    margin-right: -93px !important;
+   }
+}
+.btn-outline-px i{
+    padding: 19px 20px !important;
+}
+.case{
+    .fusion-button.inverted{
+        &:active{
+            background: none !important;
+
+            span{
+                color: #003149 !important;
+            }
+        }
+        &:focus{
+            background: none !important;
+
+            span{
+                color: #003149 !important;
+            }
+        }
+    }
+}
+.btn-left-negative{
+    @media (min-width: 320px) and (max-width: 480px) {
+        margin-left: -88px !important;
+    }
+    
+}
+.support-btn{
+    padding: 8px 31px 8px 40px !important;
+}
+.talk-btn{
+    i{
+        margin-left: 25px !important;
+    }
+}

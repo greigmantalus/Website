@@ -1,0 +1,36 @@
+/* FONTS */
+$icomoon: 'icomoon' !important;
+
+$body-font-size: 16px;
+$button-font-size: 14px;
+
+
+h1, h2{
+	@media (max-width: $md-max){
+		font-size: 70% !important;
+	}
+}
+
+h3{
+	@media (max-width: $md-max){
+		font-size: 24px !important;
+	}
+}
+
+h4{
+	@media (max-width: $md-max){
+		font-size: 20px !important;
+	}
+}
+
+h5{
+	@media (max-width: $md-max){
+		font-size: 18px !important;
+	}
+}
+
+h6{
+	@media (max-width: $md-max){
+		font-size: 16px !important;
+	}
+}

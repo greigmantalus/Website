@@ -1,0 +1,29 @@
+* strong{color: inherit;}
+small{font-size: 72%}
+img{max-width: 100%;}
+p span{display: inline;}
+
+.fusion-text{
+    ul, ol{
+        padding-left: 5px;
+    }
+    ul li, ol li{
+        margin-bottom: 10px;
+    }
+}
+
+.fusion-testimonials.clean blockquote q {
+    line-height: 1.56 !important;
+    text-align: left !important;
+    padding: 20px 0 30px !important;
+    letter-spacing: 0px !important;
+}
+
+.fusion-text{
+    ol{padding-left: 15px}
+    .fusion-text ol li{margin-bottom: 12px;}
+}
+
+@media (max-width: $md-max){
+    br{display: none;}
+}
